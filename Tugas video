@@ -1,0 +1,21 @@
+#71200537
+
+#Kamu ingin mengetahui berapa bulan,minggu,hari,jam menit dan detik dari tahun yang ditentukan, Namun kamu hanya mengetahui bahwa 1 tahun ada 12 bulan 
+#dan 365 hari buatlah sebuah program kalkulator tahun yang dapat mengetahui berapa bulan,minggu,hari,jam dan detik dari berapa tahun.
+
+print('--------------Program konversi tahun----------------')
+
+tahun = int(input('masukan berapa tahun yang ingin di konversi :'))
+#rumus
+bulan = (12*tahun)
+minggu = int(365/7)*tahun
+hari = (365*tahun)
+jam = (24*365)*tahun
+menit = (60*8760)*tahun
+detik = (60*525600)*tahun
+print('hasil konversi dari tahun ke-',tahun)
+print(tahun,'tahun ada',bulan,'bulan')
+print(tahun,'tahun ada',minggu,'minggu')
+print(tahun,'tahun ada',hari,'hari')
+print(tahun,'tahun ada',menit,'menit')
+print(tahun,'tahun ada',detik,'detik')
