@@ -1,0 +1,83 @@
+#71200537
+
+print('---Selamat datang di My Milktea--')
+print('Silahkan pilih menu yang anda inginkan :')
+print('1. Chocolate milk tea	Rp.14.000')
+print('2. Strawberry milk tea	Rp.12.000')
+print('3. Bubblegum milk tea	Rp.15.000')
+pilihan_minuman = int(input('Masukan nomor menu yang anda inginkan :'))
+#Harga minuman
+choco = 14000
+stroberi = 12000
+bubble = 15000
+#harga toping
+boba = 5000
+puding = 2000
+oreo = 4000
+
+if pilihan_minuman == 1 :
+    print('pilih toping yang anda sukai :')
+    print('1.Boba Rp.5000')
+    print('2.Puding	Rp.2000')
+    print('3.Oreo Rp.4000')
+    print('4.Tanpa toping')
+    pilihan_toping = int(input('masukan nomor toping yang anda inginkan :'))
+    if pilihan_toping == 1 :
+        choco_boba = (choco+boba)
+        print('total harga anda Rp.',choco_boba)
+        print('Silahkan lanjutkan pembayaran ke kasir')
+    elif pilihan_toping == 2 :
+        choco_puding = (choco+puding)
+        print('total harga anda Rp.',choco_puding)
+        print('Silahkan lanjutkan pembayaran ke kasir')
+    elif pilihan_toping == 3 :
+        choco_oreo = (choco+oreo)
+        print('total harga anda Rp.',choco_oreo)
+        print('Silahkan lanjutkan pembayaran ke kasir')
+    elif pilihan_toping == 4 :
+        print('total harga anda Rp.',choco)
+        print('Silahkan lanjutkan pembayaran ke kasir')
+elif pilihan_minuman == 2 :
+    print('pilih toping yang anda sukai :')
+    print('1.Boba Rp.5000')
+    print('2.Puding	Rp.2000')
+    print('3.Oreo Rp.4000')
+    print('4.Tanpa toping')
+    pilihan_toping = int(input('masukan nomor toping yang anda inginkan :'))
+    if pilihan_toping == 1 :
+        stroberi_boba = (stroberi+boba)
+        print('total harga anda Rp.',stroberi_boba)
+        print('Silahkan lanjutkan pembayaran ke kasir')
+    elif pilihan_toping == 2 :
+        stroberi_puding = (stroberi+puding)
+        print('total harga anda Rp.',stroberi_puding)
+        print('Silahkan lanjutkan pembayaran ke kasir')
+    elif pilihan_toping == 3 :
+        stroberi_oreo = (stroberi+oreo)
+        print('total harga anda Rp.',stroberi_oreo)
+        print('Silahkan lanjutkan pembayaran ke kasir')
+    elif pilihan_toping == 4 :
+        print('total harga anda Rp.',stroberi)
+        print('Silahkan lanjutkan pembayaran ke kasir')
+elif pilihan_minuman == 3 :
+    print('pilih toping yang anda sukai :')
+    print('1.Boba Rp.5000')
+    print('2.Puding	Rp.2000')
+    print('3.Oreo Rp.4000')
+    print('4.Tanpa toping')
+    pilihan_toping = int(input('masukan nomor toping yang anda inginkan :'))
+    if pilihan_toping == 1 :
+        bubble_boba = (bubble+boba)
+        print('total harga anda Rp.',bubble_boba)
+        print('Silahkan lanjutkan pembayaran ke kasir')
+    elif pilihan_toping == 2 :
+        bubble_puding = (bubble+puding)
+        print('total harga anda Rp.',bubble_puding)
+        print('Silahkan lanjutkan pembayaran ke kasir')
+    elif pilihan_toping == 3 :
+        bubble_oreo = (bubble+oreo)
+        print('total harga anda Rp.',bubble_oreo)
+        print('Silahkan lanjutkan pembayaran ke kasir')
+    elif pilihan_toping == 4 :
+        print('total harga anda Rp.',bubble)
+        print('Silahkan lanjutkan pembayaran ke kasir')
