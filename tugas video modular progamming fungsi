@@ -1,0 +1,37 @@
+#71200537
+#fungsi
+def kubus(sisi):
+    hasil_kubus = sisi*sisi*sisi
+    return hasil_kubus
+
+def balok(panjang,lebar,tinggi):
+    hasil_balok = panjang*lebar*tinggi
+    return hasil_balok
+
+def tabung(jari,tinggi):
+    hasil_tabung = 3.14*jari*jari*tinggi
+    return hasil_tabung
+
+print('----Selamat datang di kalkulator bangun ruang----')
+print('silahkan memilih menu bangun ruang untuk menghitung volume : ')
+print('1. Volume Kubus')
+print('2. Volume Balok')
+print('3. Volume Tabung')
+pilihan = int(input('Masukan angka yang diinginkan :'))
+if pilihan == 1 :
+    sisi_kubus = float(input('Masukan sisi Kubus :'))
+    hasil_volume_kubus = kubus(sisi_kubus)
+    print('Hasil volume kubus adalah ',hasil_volume_kubus)
+elif pilihan == 2 :
+    panjang_balok = float(input('Masukan Panjang Balok :'))
+    lebar_balok = float(input('Masukan Lebar Balok :'))
+    tinggi_balok = float(input('Masuka Tinggi Balok :'))
+    hasil_volume_balok = balok(panjang_balok,lebar_balok,tinggi_balok)
+    print('Volume Balok adalah :',hasil_volume_balok)
+elif pilihan == 3 :
+    jari_tabung = float(input('Masukan Jari-Jari Tabung :'))
+    tinggi_tabung = float(input('Masukan Tinggi Tabung'))
+    hasil_volume_tabung = tabung(jari_tabung,tinggi_tabung)
+    print('Volume tabung adalah : ',hasil_volume_tabung)
+else :
+    print('fitur kalkulator yang anda minta tidak tersedia atau belum tersedia silahkan menunggu update berikutnya')
