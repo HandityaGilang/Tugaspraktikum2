@@ -1,0 +1,10 @@
+def harga(jumlah_max,perharga):
+    print('Daftar harga Risoles')
+    for i in range(1, jumlah_max+1):
+        harga=i*perharga
+        print(i, 'Risoles:','   Rp',harga )
+
+jumlah= int(input('Masukan Jumlah maksimal Risoles:'))
+hargaa = int(input('Masukan harga tiap 1 Risoles :'))
+
+harga(jumlah,hargaa)
