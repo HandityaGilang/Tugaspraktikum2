@@ -1,0 +1,39 @@
+#Buatlah sebuah program untuk memberikan gambaran menata kursi 
+# tempat duduk seminar dengan jumlah kursi sama dengan baris angka depan dengan fitur
+#Menambah,mengurangi baris kursi dan menambah,mengurangi kursi
+# | 1 | 2 | 3 | 4 | 5 | 6 |
+# | + | + | + | + | + | + |
+# | # | # | # | # | # | # |
+
+pilihan = 0
+baris_angka = 6
+kursi = 6
+
+while pilihan != 5:
+    for i in range(1,baris_angka+1):
+        print('|',i,'|',end='')
+    print()
+    for j in range(kursi):
+        for u in range(baris_angka):
+            if j%2 == 0:
+                print('| + |',end='')
+            elif j%2 != 0:
+                print('| - |',end='')
+        print()
+    print('1.Tambah baris Kursi')
+    print('2.kurangi baris kursi')
+    print('3.Tambah Kursi')
+    print('4.Kurangi Kursi')
+    print('5.Selesai')
+    pilihan = int(input('Masukan Pilihan:'))
+    if pilihan == 1:
+        baris_angka=baris_angka+1
+    elif pilihan == 2:
+        baris_angka=baris_angka-1
+    elif pilihan == 3:
+        kursi=kursi+1
+    elif pilihan == 4:
+        kursi=kursi-1
+    elif pilihan == 5:
+        print('program ditutup')
+        break
