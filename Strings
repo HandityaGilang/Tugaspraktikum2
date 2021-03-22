@@ -1,0 +1,17 @@
+#71200537
+#input
+kalimat = str(input('Masukan kalimat:'))
+#proses
+kecil=0
+besar=0
+
+for i in kalimat:
+    if(i.islower()):
+        kecil=kecil+1
+    elif(i.isupper()):
+        besar=besar+1
+
+if kecil>besar:
+    print('hasilnya:',kalimat.lower())
+elif kecil<besar:
+    print('hasilnya:',kalimat.upper())
