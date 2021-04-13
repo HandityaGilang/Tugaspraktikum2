@@ -1,0 +1,30 @@
+#71200537
+handle = open('D:/Pendataan.txt','w')
+pilihan = 0 
+
+while pilihan !=3:
+    print('==Pembuat Menu==')
+    print('1.Tambah Menu')
+    print('2.Lihat Menu')
+    print('3.Selesai')
+    pilihan=int(input('Masukan Nomor:'))
+    if pilihan == 1:
+        menu1 = int(input('Masukan berapa menu yang ingin dimasukan:'))
+        for i in range(menu1):
+            namamenu = input('Masukan Nama menu:')
+            harga = int(input('Masukan Harga:'))
+            handle.write('Menu:'+ str(namamenu)+'\n')
+            handle.write('Harga: Rp.'+ str(harga)+'\n')
+        print('Data berhasil masuk')
+    elif pilihan == 2:
+        handle = open('D:/Pendataan.txt')
+        print('MENU')
+        for i in handle:
+            if i.startswith('Menu:') or i.startswith('Harga: Rp.'):
+                print(i)
+    elif pilihan == 3:
+        print('Aplikasi Dimatikan')
+        handle.close()
+        break
+    else:
+        print('Perintah tidak ditemukan')
