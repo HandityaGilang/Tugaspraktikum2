@@ -1,0 +1,17 @@
+#71200537
+print('====Program Pendataan Sepatu===')
+data=[]
+
+while data.append !=0:
+    data.append(int(input('Masukan')))
+print('data berhasil dimasukan')
+
+besar = max(data)
+kecil = min(data)
+banyak= len(data)
+
+data.sort()
+print('Ukuran Sepatu Terbesar adalah :',besar)
+print('Ukuran Sepatu Terkecil adalah :',kecil)
+print('Berikut adalah Ukuran-Ukuran Sepatu yang sudah didata',data)
+print('Total Sepatu ada',banyak)
