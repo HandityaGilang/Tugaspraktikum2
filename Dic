@@ -1,0 +1,11 @@
+#71200537
+def pembuatpassword(username):
+    dic={}
+    for i in username:
+        dic[i]=sum(ord(x)for x in i)
+    for x in dic:
+        dic[x]= str(dic[x])
+    return dic
+
+User=['BudiMeister','NCslasher','flipzjder','Venti']
+print(pembuatpassword(User))
