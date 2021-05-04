@@ -1,0 +1,24 @@
+#71200537
+def hitung(stock):
+    tolist=list(stock)
+    chitatonya=tolist.count('chitato')
+    laysnya=tolist.count('lays')
+    Taronya=tolist.count('taro')
+    qtelanya=tolist.count('qtela')
+    hitungchitato=chitatonya*10000
+    hitunglaysnya=laysnya*12000
+    hitungtaro=Taronya*8000
+    hitungqtela=qtelanya*5000
+    hitungstock=chitatonya+laysnya+Taronya+qtelanya
+    total=hitungchitato+hitunglaysnya+hitungqtela+hitungtaro
+    a=print(chitatonya,'Chitato Tersedia')
+    b=print(laysnya,'Lays Tersedia')
+    c=print(Taronya,'Taro Tersedia')
+    d=print(qtelanya,'Qtela Tersedia')
+    e=print('Total Stock Snack yang tersedia adalah',hitungstock,'Snack tersedia')
+    f=print('Total harga Semua stock tersedia adalah Rp.',total)
+    return a,b,c,d,e,f
+
+stocknya=("chitato","lays","taro","chitato","lays","lays","chitato","qtela","taro","taro","qtela","qtela","lays","qtela","taro")
+
+hitung(stocknya)
