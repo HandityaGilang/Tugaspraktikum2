@@ -1,0 +1,53 @@
+#71200537
+def menggabungkan(a,b):
+    jadikanlista=(a)
+    jadikanlistb=(b)
+    jadiseta=set(jadikanlista)
+    jadisetb=set(jadikanlistb)
+    gabung= jadiseta | jadisetb
+    hasil= print(gabung)
+    return hasil
+
+def carisama(a,b):
+    jadikanlista=(a)
+    jadikanlistb=(b)
+    jadiseta=set(jadikanlista)
+    jadisetb=set(jadikanlistb)
+    carisamaa=jadiseta & jadisetb
+    hasil=print(carisamaa)
+    return hasil
+
+def beda(a,b):
+    jadikanlista=list(a)
+    jadikanlistb=list(b)
+    jadiseta=set(jadikanlista)
+    jadisetb=set(jadikanlistb)
+    caribedanya=jadiseta^jadisetb
+    hasil=print(caribedanya)
+    return hasil
+
+pilihan=0
+while pilihan !=4:
+    print('==PROGRAM OPERASI ANGKA==')
+    print('1.Gabungkan Angka')
+    print('2.Cari angka yang sama')
+    print('3.Cari angka yang beda')
+    print('4.Keluar')
+    pilihan=int(input('Masukan angka menu yang diinginkan:'))
+    if pilihan == 1:
+        pertama=input('Masukan list angka pertama')
+        kedua=input('Masukan list angka kedua:')
+        menggabungkan(pertama,kedua)
+    elif pilihan == 2:
+        pertama=input('Masukan list angka pertama')
+        kedua=input('Masukan list angka kedua:')
+        carisama(pertama,kedua)
+    elif pilihan == 3:
+        pertama=input('Masukan list angka pertama')
+        kedua=input('Masukan list angka kedua:')
+        beda(pertama,kedua)
+    elif pilihan ==4:
+        print('Program dihentikan terimakasih sudah menggunakan')
+        break
+    else:
+        print('Pilihan menu tidak ditemukan')
